@@ -174,6 +174,8 @@ export function ModelPage() {
                     src={step.imageSrc}
                     alt={step.title}
                     className="featureImage"
+                    loading='lazy'
+                    decoding='async'
                   />
                 ) : (
                 <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
