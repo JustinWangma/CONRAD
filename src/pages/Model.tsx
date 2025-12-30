@@ -187,8 +187,16 @@ export function ModelPage() {
                     <div className="appStepText">{step.why}</div>
                   </div>
                 </div>
+                {step.imageSrc ? (
+                  <img
+                    src={step.imageSrc}
+                    alt={step.title}
+                    className="featureImage"
+                  />
+                ) : (
                 <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
-              </Reveal>
+                )}
+                </Reveal>
             ))}
           </div>
         </div>
