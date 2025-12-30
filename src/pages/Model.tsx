@@ -165,7 +165,7 @@ export function ModelPage() {
             <p className="muted">Each feature includes a placeholder image you can replace later.</p>
           </div>
 
-          <div className="grid2">
+          <div className="grid3">
             {steps.map((step, idx) => (
               <Reveal className="card" key={step.title} delayMs={10 + idx * 20}>
                 <h3 className="h3">{step.title}</h3>
