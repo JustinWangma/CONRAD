@@ -35,6 +35,7 @@ type ModelStep = {
   why: string
   imageLabel: string
   imageSublabel: string
+  imageSrc?: string
 }
 
 const steps: ModelStep[] = [
@@ -49,6 +50,7 @@ const steps: ModelStep[] = [
     why: 'Providing reminders and sharing stories helps create long-lasting memories, reduce anxiety, and deepen family bonds.',
     imageLabel: 'Feature 1 placeholder',
     imageSublabel: 'Upload voice → Voice ID → real-time loved voice',
+    imageSrc: '/images/feature1.png',
   },
   {
     title: 'Feature 2: Object Detector',
@@ -61,6 +63,7 @@ const steps: ModelStep[] = [
     why: 'Real-time guidance in a trusted voice can reduce anxiety and improve confidence while moving through the world.',
     imageLabel: 'Feature 2 placeholder',
     imageSublabel: 'Camera → classification → loved-voice alert',
+    imageSrc: '/images/feature2.png',
   },
   {
     title: 'Feature 3: Story Time',
@@ -72,6 +75,7 @@ const steps: ModelStep[] = [
     why: 'Personalized storytelling brings comfort, joy, and emotional connection through familiar narration.',
     imageLabel: 'Feature 3 placeholder',
     imageSublabel: '6 styles · loved-voice narration',
+    imageSrc: '/images/feature3.png',
   },
   {
     title: 'Feature 4: First Aid',
@@ -83,6 +87,7 @@ const steps: ModelStep[] = [
     why: 'When seconds matter, this helps people nearby respond with clarity and confidence.',
     imageLabel: 'Feature 4 placeholder',
     imageSublabel: 'Emergency profile → announce button',
+    imageSrc: '/images/feature4.png',
   },
   {
     title: 'Feature 5: Reminders',
@@ -94,6 +99,7 @@ const steps: ModelStep[] = [
     why: 'Turns routines into reassurance—supportive, familiar, and easy to follow.',
     imageLabel: 'Feature 5 placeholder',
     imageSublabel: 'Medication + events → loved-voice reminders',
+    imageSrc: '/images/feature5.png',
   },
   {
     title: 'Feature 6: SOS - Heart Rate Monitoring',
@@ -107,6 +113,7 @@ const steps: ModelStep[] = [
     why: 'Escalates quickly when it matters most—help can arrive sooner with less guesswork.',
     imageLabel: 'Feature 6 placeholder',
     imageSublabel: 'Bluetooth HR → thresholds → SOS + alarm',
+    imageSrc: '/images/feature6.png',
   },
   {
     title: 'Feature 7: Invisible Fall Detection',
@@ -119,6 +126,7 @@ const steps: ModelStep[] = [
     why: 'Discreet safety that stays in the background—ready when needed, quiet when not.',
     imageLabel: 'Feature 7 placeholder',
     imageSublabel: 'Motion sensors → detect → confirm → alert',
+    imageSrc: '/images/feature7.png',
   },
 ]
 
