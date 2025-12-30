@@ -101,7 +101,10 @@ a {
 
 /* Speed up reveal animations inside features section */
 .featuresFast .reveal {
-  transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+  /* transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out); */
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 /* Brand strip */

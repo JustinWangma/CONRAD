@@ -169,6 +169,15 @@ export function ModelPage() {
             {steps.map((step, idx) => (
               <Reveal className="card" key={step.title} delayMs={10 + idx * 20}>
                 <h3 className="h3">{step.title}</h3>
+                {step.imageSrc ? (
+                  <img
+                    src={step.imageSrc}
+                    alt={step.title}
+                    className="featureImage"
+                  />
+                ) : (
+                <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
+                )}
                 <div className="appStep">
                   <div className="appStepSection">
                     <div className="appStepLabel">What it is</div>
@@ -187,15 +196,7 @@ export function ModelPage() {
                     <div className="appStepText">{step.why}</div>
                   </div>
                 </div>
-                {step.imageSrc ? (
-                  <img
-                    src={step.imageSrc}
-                    alt={step.title}
-                    className="featureImage"
-                  />
-                ) : (
-                <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
-                )}
+
                 </Reveal>
             ))}
           </div>
