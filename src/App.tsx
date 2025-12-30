@@ -4,7 +4,8 @@ import { BrandStrip } from './components/BrandStrip'
 import { Footer } from './components/Footer'
 import { FeasibilityPage } from './pages/Feasibility'
 import { HomePage } from './pages/Home'
-import { ImpactTeamPage } from './pages/ImpactTeam'
+import ImpactPage, { ImpactPage as NamedImpactPage } from './pages/Impact'
+import TeamPage, { TeamPage  as NamedTeamPage} from './pages/Team'
 import { ModelPage } from './pages/Model'
 import { NotFoundPage } from './pages/NotFound'
 
@@ -27,9 +28,8 @@ function AppShell() {
             <Route path="/" element={<HomePage />} />
             <Route path="/model" element={<ModelPage />} />
             <Route path="/feasibility" element={<FeasibilityPage />} />
-            <Route path="/impact-team" element={<ImpactTeamPage />} />
-            <Route path="/impact" element={<Navigate to="/impact-team" replace />} />
-            <Route path="/team" element={<Navigate to="/impact-team" replace />} />
+            <Route path="/impact" element={<NamedImpactPage />} />
+            <Route path="/team" element={<NamedTeamPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

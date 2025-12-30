@@ -21,8 +21,11 @@ export function Footer() {
           <Link className="footerLink" to="/feasibility">
             Feasibility
           </Link>
-          <Link className="footerLink" to="/impact-team">
-            Impact + Team
+          <Link className="footerLink" to="/impact">
+            Impact
+          </Link>
+          <Link className="footerLink" to="/team">
+            Team
           </Link>
         </div>
       </div>

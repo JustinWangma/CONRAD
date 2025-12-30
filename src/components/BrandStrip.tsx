@@ -5,7 +5,8 @@ const navItems = [
   { to: '/', label: 'Home' },
   { to: '/model', label: 'The App' },
   { to: '/feasibility', label: 'Feasibility' },
-  { to: '/impact-team', label: 'Impact + Team' },
+  { to: '/impact', label: 'Impact' },
+  { to: '/team', label: 'Team' },
 ] as const
 
 export function BrandStrip() {

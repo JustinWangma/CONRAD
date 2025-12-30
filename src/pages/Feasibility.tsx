@@ -15,7 +15,7 @@ export function FeasibilityPage() {
               reassurance, and a privacy-first AI layer that uses consented voice to deliver warmth, support, and safety.
             </p>
             <div className="introLinks">
-              <Link className="textLink" to="/impact-team">
+              <Link className="textLink" to="/impact">
                 Next: Impact + Team →
               </Link>
             </div>
@@ -174,7 +174,7 @@ export function FeasibilityPage() {
           </div>
 
           <Reveal className="ctaRow" delayMs={220}>
-            <Link to="/impact-team" className="button buttonPrimary">
+            <Link to="/impact" className="button buttonPrimary">
               Impact + Team
             </Link>
             <Link to="/model" className="button buttonGhost">

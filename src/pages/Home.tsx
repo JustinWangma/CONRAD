@@ -20,7 +20,7 @@ export function HomePage() {
               <Link to="/model" className="button buttonPrimary">
                 See the App
               </Link>
-              <Link to="/impact-team" className="button buttonGhost">
+              <Link to="/impact" className="button buttonGhost">
                 Why it matters
               </Link>
             </div>

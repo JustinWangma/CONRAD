@@ -24,7 +24,7 @@ const buildLog = [
   'We drafted a pilot plan oriented around trust, not just detection.',
 ]
 
-export function ImpactTeamPage() {
+export function TeamPage() {
   return (
     <>
       <Reveal as="section" className="pageIntro" delayMs={0}>
@@ -204,3 +204,4 @@ export function ImpactTeamPage() {
 }
 
 
+export default TeamPage
