@@ -17,7 +17,7 @@ export function BrandStrip() {
           <BrandLogo className="logoMark" />
           <div className="brandText">
             <div className="brandName">GrandGuardian</div>
-            <div className="brandTagline">Calm support that preserves dignity.</div>
+            <div className="brandTagline">A Voice of Love for the Elderly Powered by AI.</div>
           </div>
         </Link>
 
