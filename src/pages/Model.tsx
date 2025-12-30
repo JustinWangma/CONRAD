@@ -151,7 +151,7 @@ export function ModelPage() {
       </Reveal>
 
       <Reveal as="section" className="section" delayMs={0}>
-        <div className="container">
+        <div className="container featuresFast">
           <div className="sectionHeader">
             <h2 className="h2">Seven features (inside the app)</h2>
             <p className="muted">Each feature includes a placeholder image you can replace later.</p>
@@ -159,7 +159,7 @@ export function ModelPage() {
 
           <div className="grid2">
             {steps.map((step, idx) => (
-              <Reveal className="card" key={step.title} delayMs={40 + idx * 55}>
+              <Reveal className="card" key={step.title} delayMs={10 + idx * 20}>
                 <h3 className="h3">{step.title}</h3>
                 <div className="appStep">
                   <div className="appStepSection">

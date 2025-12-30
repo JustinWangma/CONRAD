@@ -99,6 +99,11 @@ a {
   transform: translateY(0);
 }
 
+/* Speed up reveal animations inside features section */
+.featuresFast .reveal {
+  transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
 /* Brand strip */
 .brandStrip {
   position: sticky;

@@ -38,22 +38,37 @@ export function Reveal<T extends ElementType = 'div'>({
     const el = ref.current
     if (!el) return
 
-    const obs = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setInView(true)
-            if (once) obs.disconnect()
-          } else if (!once) {
-            setInView(false)
+    // Fallback: if IntersectionObserver is unavailable, reveal immediately
+    if (typeof IntersectionObserver === 'undefined') {
+      setInView(true)
+      return
+    }
+
+    let obs: IntersectionObserver | null = null
+    try {
+      obs = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              setInView(true)
+              if (once && obs) obs.disconnect()
+            } else if (!once) {
+              setInView(false)
+            }
           }
-        }
-      },
-      { root: null, threshold: 0.15, rootMargin },
-    )
+        },
+        { root: null, threshold: 0.15, rootMargin },
+      )
+    } catch {
+      // If observer construction fails for any reason, reveal immediately
+      setInView(true)
+      return
+    }
 
     obs.observe(el)
-    return () => obs.disconnect()
+    return () => {
+      if (obs) obs.disconnect()
+    }
   }, [once, rootMargin])
 
   const combinedClassName = `${className ?? ''} reveal${inView ? ' revealIn' : ''}`.trim()
