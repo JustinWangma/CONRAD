@@ -10,10 +10,10 @@ type TeamMember = {
 }
 
 const team: TeamMember[] = [
-  { name: 'Suri Li', role: 'Designer & Workflow Manager', initials: 'SL', note: 'Narrative, ethics, pilot design.' },
-  { name: 'Jonathan Shan', role: 'Care Model', initials: 'JS', note: 'Reasoning layer + evaluation metrics.' },
-  { name: 'Justin Tang', role: 'Engineering', initials: 'JT', note: 'Prototype build + integrations.' },
-  { name: 'Justin Wang', role: 'Partnerships', initials: 'JW', note: 'Community orgs + rollout planning.' },
+  { name: 'Suri Li', role: 'Designer & Workflow Manager', initials: 'SL', note: '' },
+  { name: 'Jonathan Shan', role: 'Developer & Outreach Lead', initials: 'JS', note: ' ' },
+  { name: 'Justin Tang', role: 'Business Strategist & Operations', initials: 'JT', note: ' ' },
+  { name: 'Justin Wang', role: 'Developer & Architect', initials: 'JW', note: ' ' },
 ]
 
 const buildLog = [
