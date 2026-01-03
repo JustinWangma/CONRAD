@@ -1,11 +1,11 @@
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { BrowserRouter,  Route, Routes, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { BrandStrip } from './components/BrandStrip'
 import { Footer } from './components/Footer'
 import { FeasibilityPage } from './pages/Feasibility'
 import { HomePage } from './pages/Home'
-import ImpactPage, { ImpactPage as NamedImpactPage } from './pages/Impact'
-import TeamPage, { TeamPage  as NamedTeamPage} from './pages/Team'
+// import ImpactPage, { ImpactPage as NamedImpactPage } from './pages/Impact'
+// import TeamPage, { TeamPage  as NamedTeamPage} from './pages/Team'
 import { ModelPage } from './pages/Model'
 import { NotFoundPage } from './pages/NotFound'
 
@@ -28,8 +28,8 @@ function AppShell() {
             <Route path="/" element={<HomePage />} />
             <Route path="/model" element={<ModelPage />} />
             <Route path="/feasibility" element={<FeasibilityPage />} />
-            <Route path="/impact" element={<NamedImpactPage />} />
-            <Route path="/team" element={<NamedTeamPage />} />
+            {/* <Route path="/impact" element={<NamedImpactPage />} />
+            <Route path="/team" element={<NamedTeamPage />} /> */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
